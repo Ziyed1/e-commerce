@@ -3,10 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="">
+    
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>e-commerce</title>
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> Rolex
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <!-- CART -->
+    <div class="cart" id="cart">
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="./image/home.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/Musled75" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        NOUVELLES MONTRE <br> COLLECTIONS B720 
+                    </h1>
+                    <p class="home__description">
+                        Nouveau stock de montre serie B720 arrivé dans nos magasins et disponible sur le site.
+                    </p>
+                    <span class="home__price">1214€</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Découvrir
+                        </a>
+
+                        <button class="button home__button">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Nouveauté
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Solde</span>
+                    
+                    <img src="./image/featured1.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Jazzmaster</h3>
+                        <span class="featured__price">1050€</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        Ajouter au panier
+                    </button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Solde</span>
+                    
+                    <img src="./image/featured2.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Ingersoll</h3>
+                        <span class="featured__price">250€</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        Ajouter au panier
+                    </button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Solde</span>
+                    
+                    <img src="./image/featured3.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Rose gold</h3>
+                        <span class="featured__price">890€</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        Ajouter au panier
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- STORY -->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Notre activité
+                    </h2>
+
+                    <h1 class="story__title">
+                        Des montres inspirante <br> cette année
+                    </h1>
+
+                    <p class="story__description">
+                        Les montres les plus récentes et modèrnes sont disponible sur ce site, découvrer les maintenants.
+                    </p>
+
+                    <a href="#" class="button button--small">Découvrir</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="./image/story.png" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products section container" id="products">
+            
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+    </footer>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
