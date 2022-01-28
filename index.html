@@ -10,6 +10,9 @@
     <!-- BOXICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
 
@@ -35,7 +38,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#featured" class="nav__link">Featured</a>
@@ -113,7 +116,7 @@
         <!-- FEATURED -->
         <section class="featured section container" id="featured">
             <h2 class="section__title">
-                Nouveauté
+                En tête d'achat
             </h2>
 
             <div class="featured__container grid">
@@ -253,11 +256,272 @@
                 </article>
             </div>
         </section>
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+
+                            <p class="testimonial__description">
+                                Les meilleurs montres sont sur ce site, elles sont conçus avec de l'or pur
+                                et de l'argent, et du cuire de qualité. Les prix sont au niveau de la production
+                                et très compétitif sur le marcher.
+                            </p>
+                            <h3 class="testimonial__date">27 mars 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="./image/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Joe</span>
+                                    <span class="testimonial__perfil-detail">PDG d'entreprise</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+
+                             <p class="testimonial__description">
+                                 Montre parfaite, bien reçus, les meilleurs du marché !
+                             </p>
+                            <h3 class="testimonial__date">10 mai 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                 <img src="./image/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                      <span class="testimonial__perfil-name">NJR</span>
+                                      <span class="testimonial__perfil-detail">Paris ballon d'or</span>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+
+                            <p class="testimonial__description">
+                                Montre en très bon état et très appréciable de par sa qualité.
+                                Colis reçu rapidement dans de bonne condition.
+                            </p>
+                            <h3 class="testimonial__date">28 Janvier 2022</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="./image/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Jordan</span>
+                                    <span class="testimonial__perfil-detail">Architect logiciel IBM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="./image/testimonial.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW -->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                Nouveauté 
+            </h2>
+
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">Nouveau</span>
+
+                            <img src="./image/new1.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Logines rose</h3>
+                                <span class="new__price">980€</span>
+                            </div>
+
+                            <button class="button new__button">Ajouter au panier</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">Nouveau</span>
+
+                            <img src="./image/new2.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Jazzmaster</h3>
+                                <span class="new__price">1150€</span>
+                            </div>
+
+                            <button class="button new__button">Ajouter au panier</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">Nouveau</span>
+
+                            <img src="./image/new3.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Dreyfuss gold</h3>
+                                <span class="new__price">1590€</span>
+                            </div>
+
+                            <button class="button new__button">Ajouter au panier</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">Nouveau</span>
+
+                            <img src="./image/new4.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Portuguese rose</h3>
+                                <span class="new__price">1590€</span>
+                            </div>
+
+                            <button class="button new__button">Ajouter au panier</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">
+                        Inscrivez vous a notre <br> Newsletter
+                    </h2>
+                    <p class="newsletter__description">
+                        Ne manquer pas nos offres du moment. Abonnez vous à notre
+                        Newsletter pour avoir les meilleurs offres, coupons, cadeau 
+                        et réduction.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Entrer votre email" class="newsletter__input">
+                    <button class="button">
+                        S'inscrire
+                    </button>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">AIDE & INFORMATION</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Assistance</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Suivi commande</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Livraison & Retour</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Livraison Premium</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">À PROPOS DE NOUS</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">À propos de nous</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">On recrute</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Responsabilité des entreprises</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">INFORMATIONS LEGALES</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Conditions Générales de Vente</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Protection de la vie privée et cookies</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Accessibilité numérique</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+
+                    <a href="https://twitter.com/Musled75" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/?hl=fr" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                 
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Musled. All rights reserved</span>
     </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!-- SWIPER JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>

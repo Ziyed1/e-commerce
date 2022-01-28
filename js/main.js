@@ -4,6 +4,7 @@ const navMenu = document.getElementById('nav-menu'),
       navClose = document.getElementById('nav-close');
 
 
+
 /* MENU SHOW */
 /* Si le navToggle existe, alors :  */       
 if(navToggle){
@@ -42,4 +43,67 @@ function scrollHeader() {
 }
 window.addEventListener('scroll',scrollHeader)
 
+
+/* --------------- AVIS SWIPER --------------- */
+var swiper = new Swiper(".testimonial-swiper", {
+    spaceBetween: 30,
+    loop: 'true',
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
+/* --------------- NOUVEAUTE SWIPER --------------- */
+var swiper = new Swiper(".new-swiper", {
+    spaceBetween: 24,
+    loop: 'true',
+
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+
+});
+
+/* --------------- SCROLL ANIMATION --------------- */
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/* --------------- SHOW SCROLL UP --------------- */
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    
+    // Quand la taille du scroll est superieur a 400, on ajoute la classe show-scroll au tag avec la classe scroll-top
+    if(this.scrollY >= 400){
+        scrollUp.classList.add('show-scroll')
+    }  else {
+        scrollUp.classList.remove('show-scroll')
+    }
+}
+window.addEventListener('scroll', scrollUp)
 
