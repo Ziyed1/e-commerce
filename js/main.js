@@ -108,3 +108,21 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 
+/* ---------------PANIER --------------- */
+const cart = document.getElementById('cart'),
+      cartShop =  document.getElementById('cart-shop'), 
+      cartClose = document.getElementById('cart-close');
+
+/* Si on recupère bien cartShop, alors :  */       
+if(cartShop){
+    cartShop.addEventListener('click', () => {
+        cart.classList.add('show-cart')
+    })
+}
+
+/* Si on recupère bien cartClose, alors : */
+if(cartClose){
+    cartClose.addEventListener('click', () => {
+        cart.classList.remove('show-cart')
+    })
+}
