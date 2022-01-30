@@ -5,7 +5,7 @@
     --header-height: 3.5rem;
 
     /* INITIALISATION DES COULEURS */
-    --first-color: hsl(31,100%,70%);
+    --first-color: hsla(85, 49%, 38%, 65.85%);
     --button-color: hsl(0,0%,17%);
     --button-color-alt: hsl(0,0%,21%);
     --title-color: hsl(0,0%,15%);
@@ -98,6 +98,11 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
 }
 
 button {
