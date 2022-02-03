@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
 
     <!-- BOXICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -16,154 +16,23 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
 
-    <!-- SCSS -->
-    <link rel="stylesheet" href="">
-    
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>E-commerce</title>
+    <title>WarStock</title>
 
 </head>
 <body>
+
     <!-- HEADER -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="./image/logo.png" alt="" class="logo">
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Accueil</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#featured" class="nav__link">En vedette</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#products" class="nav__link">Nos véhicules</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#new" class="nav__link">Nouveauté</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x' ></i>
-                </div>
-            </div>
-
-            <div class="nav__btns">
-                <!-- Boutton Dark Thème -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__shop" id="cart-shop">
-                    <i class='bx bx-shopping-bag' ></i>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </div>
-        </nav>
+        <?php require('./vue/header.php'); ?>
     </header>
    
     <!-- CART -->
     <div class="cart" id="cart">
-        <i class='bx bx-x cart__close' id="cart-close"></i>
-
-        <h2 class="cart__title-center">Mon Panier</h2>
-
-        <div class="cart__container">
-            <article class="cart__card">
-                <div class="cart__box">
-                    <img src="./image/featured1.png" alt="" class="cart__img">
-                </div>
-
-                <div class="cart__details">
-                    <h3 class="cart__title">Jazzmaster</h3>
-                    <span class="cart__price">1100€</span>
-
-                    <div class="cart__amount">
-                        <div class="cart__amount-content">
-                            <span class="cart__amount-box">
-                                <i class='bx bx-minus' ></i>
-                            </span>
-
-                            <span class="cart__amount-number">1</span>
-                            
-                            <span class="cart__amount-box">
-                                <i class='bx bx-plus' ></i>
-                            </span>
-                        </div>
-
-                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cart__card">
-                <div class="cart__box">
-                    <img src="./image/featured2.png" alt="" class="cart__img">
-                </div>
-
-                <div class="cart__details">
-                    <h3 class="cart__title">Rose Gold</h3>
-                    <span class="cart__price">850€</span>
-
-                    <div class="cart__amount">
-                        <div class="cart__amount-content">
-                            <span class="cart__amount-box">
-                                <i class='bx bx-minus' ></i>
-                            </span>
-
-                            <span class="cart__amount-number">1</span>
-                            
-                            <span class="cart__amount-box">
-                                <i class='bx bx-plus' ></i>
-                            </span>
-                        </div>
-
-                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cart__card">
-                <div class="cart__box">
-                    <img src="./image/featured3.png" alt="" class="cart__img">
-                </div>
-
-                <div class="cart__details">
-                    <h3 class="cart__title">Logines Rose</h3>
-                    <span class="cart__price">980€</span>
-
-                    <div class="cart__amount">
-                        <div class="cart__amount-content">
-                            <span class="cart__amount-box">
-                                <i class='bx bx-minus' ></i>
-                            </span>
-
-                            <span class="cart__amount-number">1</span>
-                            
-                            <span class="cart__amount-box">
-                                <i class='bx bx-plus' ></i>
-                            </span>
-                        </div>
-
-                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <div class="cart__prices">
-            <span class="cart__prices-item">3 items</span>
-            <span class="cart__prices-total">2880€</span>
-        </div>
+        <?=require('./vue/panier.php');?>
     </div>
 
     <!-- MAIN -->
@@ -218,7 +87,7 @@
                 <article class="featured__card">
                     <span class="featured__tag">Solde</span>
                     
-                    <img src="./image/featured1.png" alt="" class="featured__img">
+                    <img src="./image/cat2.png" alt="" class="featured__img">
 
                     <div class="featured__data">
                         <h3 class="featured__title">Jazzmaster</h3>
@@ -233,7 +102,7 @@
                 <article class="featured__card">
                     <span class="featured__tag">Solde</span>
                     
-                    <img src="./image/featured2.png" alt="" class="featured__img">
+                    <img src="./image/cat2.png" alt="" class="featured__img">
 
                     <div class="featured__data">
                         <h3 class="featured__title">Ingersoll</h3>
@@ -248,7 +117,7 @@
                 <article class="featured__card">
                     <span class="featured__tag">Solde</span>
                     
-                    <img src="./image/featured3.png" alt="" class="featured__img">
+                    <img src="./image/cat2.png" alt="" class="featured__img">
 
                     <div class="featured__data">
                         <h3 class="featured__title">Rose gold</h3>
@@ -271,24 +140,24 @@
                     </h2>
 
                     <h1 class="story__title">
-                        Des montres inspirante <br> cette année
+                        Des véhicules aux normes actuelle
                     </h1>
 
                     <p class="story__description">
-                        Les montres les plus récentes et modèrnes sont disponible sur ce site, découvrer les maintenants.
+                        Les véhicules vendus respecte les normes euroopéeennes et dispose de technologie dernier cri, à découvrir maintenants.
                     </p>
 
                     <a href="#" class="button button--small">Découvrir</a>
                 </div>
 
                 <div class="story__images">
-                    <img src="./image/story.png" alt="" class="story__img">
+                    <img src="./image/blindax.jpeg" alt="" class="story__img">
                     <div class="story__square"></div>
                 </div>
             </div>
         </section>
 
-        <!-- PRODUCTS -->
+        <!-- PRODUITS -->
         <section class="products section container" id="products">
             <h2 class="section__title">
                 Nos Véhicules
@@ -296,58 +165,45 @@
 
             <div class="products__container grid">
                 <article class="products__card">
-                    <img src="./image/product1.png" alt="" class="products__img">
+                    <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
+                    
+                    <h3 class="products__title">Véhicules Blindés</h3>
 
-                    <h3 class="products__title">Spirit rose</h3>
-                    <span class="products__price">1500€</span>
-
-                    <button class="products__button">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </button>
                 </article>
 
                 <article class="products__card">
-                    <img src="./image/product2.png" alt="" class="products__img">
+                <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
 
-                    <h3 class="products__title">Khaki pilot</h3>
-                    <span class="products__price">1350€</span>
+                    <h3 class="products__title">Véhicules légers</h3>
 
-                    <button class="products__button">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </button>
                 </article>
 
                 <article class="products__card">
-                    <img src="./image/product3.png" alt="" class="products__img">
+                <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
 
-                    <h3 class="products__title">Jubilee black</h3>
-                    <span class="products__price">870€</span>
+                    <h3 class="products__title">Véhicules Lourds</h3>
 
-                    <button class="products__button">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </button>
                 </article>
 
                 <article class="products__card">
-                    <img src="./image/product4.png" alt="" class="products__img">
+                <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
 
-                    <h3 class="products__title">Fosil me3</h3>
-                    <span class="products__price">650€</span>
+                    <h3 class="products__title">Camion, Pick-up</h3>
 
-                    <button class="products__button">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </button>
                 </article>
 
                 <article class="products__card">
-                    <img src="./image/product5.png" alt="" class="products__img">
+                <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
 
-                    <h3 class="products__title">Duchen</h3>
-                    <span class="products__price">950€</span>
+                    <h3 class="products__title">Motos</h3>
 
-                    <button class="products__button">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </button>
+                </article>
+
+                <article class="products__card">
+                <a href="./vue/catégorie.php"><img src="./image/cat2.png" alt="" class="products__img"></a>
+
+                    <h3 class="products__title">Pièces, Accessoires</h3>
+
                 </article>
             </div>
         </section>
@@ -363,9 +219,9 @@
                             </div>
 
                             <p class="testimonial__description">
-                                Les meilleurs montres sont sur ce site, elles sont conçus avec de l'or pur
-                                et de l'argent, et du cuire de qualité. Les prix sont au niveau de la production
-                                et très compétitif sur le marcher.
+                                Les meilleurs véhicules blindés sont sur ce site. WarStock apporte la même attention 
+                                aux détails et à la sécurité que si c'était l'une de ses luxueuses limousines. Les prix
+                                 sont au niveau de la production et reste très compétitif sur le marcher.
                             </p>
                             <h3 class="testimonial__date">27 mars 2021</h3>
 
@@ -385,7 +241,7 @@
                             </div>
 
                              <p class="testimonial__description">
-                                 Montre parfaite, bien reçus, les meilleurs du marché !
+                                 Véhicule parfait, les meilleurs du marché !
                              </p>
                             <h3 class="testimonial__date">10 mai 2021</h3>
 
@@ -405,8 +261,7 @@
                             </div>
 
                             <p class="testimonial__description">
-                                Montre en très bon état et très appréciable de par sa qualité.
-                                Colis reçu rapidement dans de bonne condition.
+                                Voiture aux normes et en très bon état. Conduite très appréciable de par sa qualité.
                             </p>
                             <h3 class="testimonial__date">28 Janvier 2022</h3>
 
@@ -432,7 +287,7 @@
 
                 <div class="testimonial__images">
                     <div class="testimonial__square"></div>
-                    <img src="./image/testimonial.png" alt="" class="testimonial__img">
+                    <img src="./image/moto.jpg" alt="" class="testimonial__img">
                 </div>
             </div>
         </section>
@@ -449,7 +304,7 @@
                         <article class="new__card swiper-slide">
                             <span class="new__tag">Nouveau</span>
 
-                            <img src="./image/new1.png" alt="" class="new__img">
+                            <img src="./image/cat2.png" alt="" class="new__img">
 
                             <div class="new__data">
                                 <h3 class="new__title">Logines rose</h3>
@@ -462,7 +317,7 @@
                         <article class="new__card swiper-slide">
                             <span class="new__tag">Nouveau</span>
 
-                            <img src="./image/new2.png" alt="" class="new__img">
+                            <img src="./image/cat2.png" alt="" class="new__img">
 
                             <div class="new__data">
                                 <h3 class="new__title">Jazzmaster</h3>
@@ -475,7 +330,7 @@
                         <article class="new__card swiper-slide">
                             <span class="new__tag">Nouveau</span>
 
-                            <img src="./image/new3.png" alt="" class="new__img">
+                            <img src="./image/cat2.png" alt="" class="new__img">
 
                             <div class="new__data">
                                 <h3 class="new__title">Dreyfuss gold</h3>
@@ -488,7 +343,7 @@
                         <article class="new__card swiper-slide">
                             <span class="new__tag">Nouveau</span>
 
-                            <img src="./image/new4.png" alt="" class="new__img">
+                            <img src="./image/cat2.png" alt="" class="new__img">
 
                             <div class="new__data">
                                 <h3 class="new__title">Portuguese rose</h3>
@@ -527,88 +382,10 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <h3 class="footer__title">AIDE & INFORMATION</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="" class="footer__link">Assistance</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Suivi commande</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Livraison & Retour</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Livraison Premium</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">À PROPOS DE NOUS</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="" class="footer__link">À propos de nous</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">On recrute</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Responsabilité des entreprises</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Copyright</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">INFORMATIONS LEGALES</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="" class="footer__link">Conditions Générales de Vente</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Protection de la vie privée et cookies</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Mentions légales</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Accessibilité numérique</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Social</h3>
-
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook' ></i>
-                    </a>
-
-                    <a href="https://twitter.com/Musled75" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/?hl=fr" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                 
-                </ul>
-            </div>
-        </div>
-
-        <span class="footer__copy">&#169; Musled. All rights reserved</span>
-    </footer>
+     <!-- FOOTER -->
+     <footer class="footer section">
+        <?php require('./vue/footer.php'); ?>
+     </footer>
 
     <!-- SCROLL UP -->
     <a href="#" class="scrollup" id="scroll-up">
