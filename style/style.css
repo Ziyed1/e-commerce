@@ -132,10 +132,6 @@ body.dark-theme {
 }
 
 
-.dark-theme .change-theme, .dark-theme .nav__toggle, .dark-theme .nav__shop, .dark-theme .button--gray, .login {
-    color: hsl(0, 0%, 15%);
-}
-
 .dark-theme .scroll-header {
     box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
 }
@@ -286,10 +282,6 @@ body.dark-theme {
     box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
 }
 
-/* Active link */
-.active-link {
-    color: var(--first-color);
-}
 
 /* ---------------- HOME ---------------- */
 .home__container{
@@ -495,6 +487,7 @@ body.dark-theme {
 .products__container, .new__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    cursor: pointer;
 }
 
 .products__card {
@@ -1119,6 +1112,7 @@ body.dark-theme {
     .featured__container {
         grid-template-columns: repeat(3, 312px);
         padding-top: 2rem;
+        cursor: pointer;
     }
 
     .story__container, .testimonial__container {

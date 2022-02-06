@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-<link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<link rel="stylesheet" href="../style/swiper-bundle.min.css">
-<link rel="stylesheet" href="../style/style.css">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>Catégorie</title>
-</head>
-
-<body>
-    
-
 <?php include('header.php');?>
 
 
+<body>
+    
+<div class="cart" id="cart">
+        <?php require('../vue/panier.php');?>
+</div>
 
-<div class="featured__container grid">
+
+<section class="featured section container" id="products">
+    <div class="featured__container grid">
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -41,7 +25,6 @@
                 </article>
 
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -56,7 +39,6 @@
                 </article>
 
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -71,7 +53,6 @@
                 </article>
 
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -86,7 +67,6 @@
                 </article>
 
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -101,7 +81,6 @@
                 </article>
 
                 <article class="featured__card">
-                    <span class="featured__tag">Solde</span>
                     
                     <img src="../image/cat2.png" alt="" class="featured__img">
 
@@ -115,10 +94,8 @@
                     </button>
                 </article>
             </div>
-
-<?php include('footer.php');?>
-
-
+</section>
+ 
     <!-- SCROLL UP -->
     <a href="#" class="scrollup" id="scroll-up">
         <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
@@ -130,4 +107,9 @@
     <!-- MAIN JS -->
     <script src="../js/main.js"></script>
 </body>
+
+    <footer>          
+        <?php include('footer.php');?>
+    </footer>
+
 </html>
