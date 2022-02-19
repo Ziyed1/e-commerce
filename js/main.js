@@ -113,19 +113,24 @@ const cart = document.getElementById('cart'),
       cartShop =  document.getElementById('cart-shop'), 
       cartClose = document.getElementById('cart-close');
 
-/* Si on recupère bien cartShop, alors :  */       
+/* Si on recupère bien le logo cartShop, alors : */        
 if(cartShop){
     cartShop.addEventListener('click', () => {
         cart.classList.add('show-cart')
     })
 }
 
-/* Si on recupère bien cartClose, alors : */
+/* Si on recupère bien le logo cartClose, alors : */
 if(cartClose){
     cartClose.addEventListener('click', () => {
         cart.classList.remove('show-cart')
     })
 }
+
+/* --------------- LOGIN --------------- */
+
+
+
 
 /* --------------- DARK/LIGHT --------------- */
 const themeButton = document.getElementById('theme-button')

@@ -85,8 +85,15 @@
     </article>
 
     <div class="cart__prices">
-    <span class="cart__prices-item">3 items</span>
-    <span class="cart__prices-total">2880€</span>
+        <span class="cart__prices-item">3 items</span>
+        <span class="cart__prices-total">2880€</span>
+    </div>
+
+    <button class="button">Procéder au paiement</button>
+
+   
 </div>
-</div>
+
+
+
 

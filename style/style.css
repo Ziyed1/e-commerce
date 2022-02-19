@@ -941,6 +941,190 @@ body.dark-theme {
     right: 0;
 }
 
+/* Login */
+.Login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.imgBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(255deg, #65864a, #556B2F);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;  
+}
+
+.contentBx .formBx {
+   width: 50%; 
+}
+
+.contentBx .formBx h2 {
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #48745a;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+.contentBx .formBx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 16px;
+    letter-spacing: 1px;
+}
+
+.contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #48745a;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #48745a;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.contentBx .formBx .inputBx input[type="submit"] {
+    background: #65864a;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contentBx .formBx .inputBx input[type="submit"]:hover {
+    background: #65864a;
+}
+
+.contentBx .formBx .remember {
+    margin-bottom: 10px;
+    color: #48745a;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contentBx .formBx .inputBx p {
+    color: #48745a;
+}
+
+.contentBx .formBx .inputBx p a {
+    color: #65864a;
+}
+
+.contentBx .formBx h3 {
+    color: #65864a;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+
+.sci {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sci li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sci .g {
+    position: absolute;
+    left: 75%;
+}
+
+.sci .fb {
+    position: absolute;
+    left: 71%;
+}
+
+.sci li:hover {
+    width: 100px;
+    height: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+    }
+    .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .formBx {
+        width: 100%;
+        padding: 40px;
+        background: #fff;
+        margin: 50px;
+    }
+    .contentBx .formBx h3 {
+        color: #65864a;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+}
+
+
 /* ---------------- ADAPTATION ECRAN ---------------- */
 @media screen and (max-width: 320px) {
     .container {
