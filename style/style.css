@@ -1031,10 +1031,11 @@ body.dark-theme {
     border: none;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .contentBx .formBx .inputBx input[type="submit"]:hover {
-    background: #65864a;
+    background: #54a074;
 }
 
 .contentBx .formBx .remember {

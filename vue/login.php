@@ -32,7 +32,7 @@
         </div>
         <div class="contentBx">  
             <div class="formBx">
-                 <h2>Login</h2>
+                 <h2>Connexion</h2>
                  <form>
                      <div class="inputBx">
                          <span>Adresse mail</span>

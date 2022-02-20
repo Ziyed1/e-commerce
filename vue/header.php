@@ -58,7 +58,7 @@
                     <i class='bx bx-shopping-bag' ></i>
                 </div>
 
-                <i class='bx bx-user login' id="user-button"></i>
+                <a href="login.php"><i class='bx bx-user login' id="user-button"></i></a>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-grid-alt'></i>
